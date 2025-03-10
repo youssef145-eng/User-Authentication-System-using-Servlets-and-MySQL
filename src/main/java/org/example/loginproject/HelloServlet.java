@@ -21,6 +21,7 @@ public class HelloServlet extends HttpServlet {
         String fullname=request.getParameter("name");
         String phone=request.getParameter("phone");
         System.out.println(username+" "+password+" "+fullname+" "+phone);
+        System.out.println("version2 to git");
         Employee emp = new Employee();
         emp.save_DB(new Employee(fullname,username,phone,password));
         response.sendRedirect("welcomepage.html");
